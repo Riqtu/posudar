@@ -1,18 +1,20 @@
 nav {
 	display: flex;
-	height: 70px;
+	min-height: 70px;
 	background-color: var(--main-red-color);
 	padding: 0 3%;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 	a {
 		display: flex;
 		align-items: center;
 		padding: 0 10px;
 		padding-right: 50px;
 		color: white;
-		height: 50%;
-		max-width: 100px;
+		height: 40px;
+		margin: 10px 0;
+		width: 100px;
 		border-left: 1px solid white;
 		text-decoration: none;
 		font-size: 0.8rem;

@@ -11,3 +11,14 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+.label {
+	color: var(--main-red-color);
+	margin: 0 30px;
+	font-size: 2rem;
+}
+
+.container {
+	// display: flex;
+	margin: 0 3%;
+}

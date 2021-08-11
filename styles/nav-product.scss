@@ -1,0 +1,40 @@
+.nav-product {
+	display: flex;
+	margin: 30px 0;
+	gap: 40px;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.nav-product__box {
+	cursor: pointer;
+	display: flex;
+	padding: 20px;
+	width: 220px;
+	height: 100px;
+	border: 1px solid var(--main-red-color);
+	border-radius: 10px;
+	background-image: url("./../images/navProductBack.svg");
+	background-color: white;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-items: center;
+	justify-content: space-around;
+	transition: 0.3s;
+	span {
+		color: var(--main-red-color);
+		width: 55%;
+		transition: 0.3s;
+	}
+	img {
+		width: 30%;
+	}
+	&:hover {
+		background-color: var(--main-red-color);
+		span {
+			color: white;
+		}
+	}
+}

@@ -1,3 +1,6 @@
 import "./styles/style.scss"
 import "./styles/header.scss"
 import "./styles/navbar.scss"
+import "./styles/news-slider.scss"
+import "./styles/nav-product.scss"
+import "./styles/advert.scss"
