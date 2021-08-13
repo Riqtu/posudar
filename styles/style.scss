@@ -1,8 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@700&display=swap");
 
 * {
 	--main-red-color: brown;
+	--main-red-color-active: rgb(122, 33, 33);
+	--gray-color: #e2e2e2;
+
 	font-family: "Raleway", sans-serif;
+	transition: 0;
 }
 
 body {
@@ -12,13 +16,38 @@ body {
 	padding: 0;
 }
 
+button {
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	border-radius: 8px;
+	padding: 10px;
+	display: flex;
+	// align-items: center
+	gap: 10px;
+	width: fit-content;
+}
+
+.redBC {
+	background-color: var(--main-red-color);
+}
+
 .label {
 	color: var(--main-red-color);
-	margin: 0 30px;
+	margin: 0px 30px;
 	font-size: 2rem;
 }
 
 .container {
 	// display: flex;
-	margin: 0 3%;
+	margin: 20px 5%;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }

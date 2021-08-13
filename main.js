@@ -4,3 +4,7 @@ import "./styles/navbar.scss"
 import "./styles/news-slider.scss"
 import "./styles/nav-product.scss"
 import "./styles/advert.scss"
+import "./styles/product.scss"
+import "./styles/footer.scss"
+
+import "./styles/filter.scss"
