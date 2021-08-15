@@ -30,9 +30,9 @@ let products = productsArr.map((el) => {
       <div class="product__card--price"><span>1300</span> 560₽</div>
       <div class="product__card--title">Тарелка "Japan"</div>
   </a>
-  <button class="product__card--cart-btn">
-    <span>В корзину</span><img src="${cardCart}" alt="" />
-  </button>
+    <button class="product__card--cart-btn">
+      <span>В корзину</span><img src="${cardCart}" alt="" />
+    </button>
   </div>
 `
 })

@@ -8,8 +8,8 @@ import './styles/product.scss'
 import './styles/footer.scss'
 
 import './styles/filter.scss'
-
 import './styles/product-description.scss'
+import './styles/cart.scss'
 
 import './scripts/renderFooter'
 

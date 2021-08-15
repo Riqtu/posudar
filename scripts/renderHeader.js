@@ -19,7 +19,7 @@ headerContainer.innerHTML = `
 <div class="navigation">
   <a href="">Контакты</a>
   <a href="">Как купить</a>
-  <a href="">Корзина</a>
+  <a href="/screens/cart.html">Корзина</a>
   <a href="">Вход</a>
 </div>
 </div>
