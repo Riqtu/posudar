@@ -9,5 +9,11 @@ import './styles/footer.scss'
 
 import './styles/filter.scss'
 
+import './styles/product-description.scss'
+
+import './scripts/renderFooter'
+
+import './scripts/renderHeader'
+import './scripts/renderNav'
 import './scripts/renderProducts'
 import './scripts/renderNavProducts'
