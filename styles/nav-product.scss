@@ -4,6 +4,9 @@
 	gap: 40px;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	a {
+		text-decoration: none;
+	}
 }
 
 .nav-product__box {
@@ -23,6 +26,7 @@
 	align-items: center;
 	justify-content: space-around;
 	transition: 0.3s;
+
 	span {
 		color: var(--main-red-color);
 		width: 55%;
