@@ -16,6 +16,13 @@
   padding: 20px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 20px;
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .splide {
+    height: 100%;
+  }
 }
 
 .product-description--charact {
@@ -31,7 +38,7 @@
   }
 }
 .product-description--cart-form {
-  width: 230px;
+  width: 270px;
   height: min-content;
   background-color: white;
   padding: 20px;

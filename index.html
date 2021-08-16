@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/png" href="./images/icon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>ПосударЪ</title>
-		<link rel="stylesheet" href="/styles/slider.css" />
-		<script defer src="./scripts/slider.js"></script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function () {
-				const slider = new ChiefSlider(".slider", {
-					loop: false
-				})
-			})
-		</script>
-	</head>
-	<body>
-		<header></header>
-		<nav></nav>
-		<div class="news-slider">
-			<div class="slider">
-				<div class="slider__container">
-					<div class="slider__wrapper">
-						<div class="slider__items">
-							<div class="slider__item">
-								<!-- Контент 1 слайда -->
-							</div>
-							<div class="slider__item">
-								<!-- Контент 2 слайда -->
-							</div>
-							<div class="slider__item">
-								<!-- Контент 3 слайда -->
-							</div>
-							<div class="slider__item">
-								<!-- Контент 4 слайда -->
-							</div>
-							<div class="slider__item">
-								<!-- Контент 5 слайда -->
-							</div>
-						</div>
-					</div>
-				</div>
-				<a href="#" class="slider__control" data-slide="prev"></a>
-				<a href="#" class="slider__control" data-slide="next"></a>
-			</div>
-		</div>
-		<div class="container">
-			<label for="" class="label">Продукция</label>
-			<div class="nav-product"></div>
-			<label for="" class="label">Предложения</label>
-			<div class="advert">
-				<div class="advert__box"></div>
-				<div class="advert__box"></div>
-				<div class="advert__box"></div>
-				<div class="advert__box"></div>
-				<div class="advert__box"></div>
-				<div class="advert__box"></div>
-			</div>
-			<label for="" class="label">Успей купить!</label>
-			<div class="product"></div>
-		</div>
-		<footer></footer>
-		<div id="modalBlock"></div>
-		<script type="script"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./images/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ПосударЪ</title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide', {
+          arrows: false,
+          autoplay: true,
+          interval: 3000,
+          pauseOnHover: false,
+        })
 
-		<script type="module" src="/main.js"></script>
-		<script type="module" src="/scripts/renderNavProducts.js"></script>
-		<script type="module" src="/scripts/renderProducts.js"></script>
-	</body>
+        splide.on('autoplay:playing', function (rate) {
+          console.log(rate) // 0-1
+        })
+        splide.mount()
+      })
+    </script>
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <div class="news-slider">
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="/images/Group 48.png" alt="" />
+            </li>
+            <li class="splide__slide"></li>
+            <li class="splide__slide">Slide 03</li>
+          </ul>
+        </div>
+        <div class="splide__progress">
+          <div class="splide__progress__bar"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <label for="" class="label">Продукция</label>
+      <div class="nav-product"></div>
+      <label for="" class="label">Предложения</label>
+      <div class="advert">
+        <div class="advert__box"></div>
+        <div class="advert__box"></div>
+        <div class="advert__box"></div>
+        <div class="advert__box"></div>
+        <div class="advert__box"></div>
+        <div class="advert__box"></div>
+      </div>
+      <label for="" class="label">Успей купить!</label>
+      <div class="product"></div>
+    </div>
+    <footer></footer>
+    <div id="modalBlock"></div>
+    <script type="script"></script>
+
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/scripts/renderNavProducts.js"></script>
+    <script type="module" src="/scripts/renderProducts.js"></script>
+  </body>
 </html>
