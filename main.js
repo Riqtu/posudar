@@ -17,7 +17,6 @@ import "./scripts/renderModals"
 
 import "./scripts/renderHeader"
 import "./scripts/renderNav"
-
 // import "./scripts/renderProducts"
 
 import { hideModal, showModal } from "./scripts/modal"
