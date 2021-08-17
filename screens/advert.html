@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ПосударЪ - продукция</title>
+	</head>
+	<body>
+		<header></header>
+		<nav></nav>
+		<div class="container">
+			<label for="" class="label">За тарелками!</label>
+			<p>Все тарелки со скидкой 20%! Такое нельзя пропускать</p>
+			<div class="flex-container">
+				<form class="filter">
+					<span class="filter__logo">Фильтр</span>
+					<label for="">Тематика</label>
+					<div class="select-wrapper">
+						<select name="theme" id="">
+							<option value="" disabled selected>Не выбрано</option>
+							<option value="Дети">Дети</option>
+							<option value="Керамика">Керамика</option>
+						</select>
+						<img src="/images/icons/arrow.svg" alt="" />
+					</div>
+					<label for="">Стоимость</label>
+					<div class="price-wrapper">
+						<input type="text" name="" id="" placeholder="От..." /> -
+						<input type="text" name="" id="" placeholder="До..." />
+					</div>
+					<label for="">Материал</label>
+					<div class="select-wrapper">
+						<select name="theme" id="">
+							<option value="" disabled selected>Не выбрано</option>
+							<option value="Дети">Керамика</option>
+							<option value="Керамика">Фарфор</option>
+						</select>
+						<img src="/images/icons/arrow.svg" alt="" />
+					</div>
+					<label for="">Цвет</label>
+					<div class="select-wrapper">
+						<select name="theme" id="">
+							<option value="" disabled selected>Не выбрано</option>
+							<option value="Дети">Синий</option>
+							<option value="Керамика">Красный</option>
+						</select>
+						<img src="/images/icons/arrow.svg" alt="" />
+					</div>
+				</form>
+				<div class="product"></div>
+			</div>
+		</div>
+		<footer></footer>
+		<div id="modalBlock"></div>
+
+		<script type="module" src="/main.js"></script>
+		<script type="module" src="/scripts/renderProducts.js"></script>
+	</body>
+</html>

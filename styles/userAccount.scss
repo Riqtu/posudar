@@ -34,6 +34,18 @@
 		font-size: 1.5rem;
 		margin-left: 10px;
 	}
+	@media screen and (max-width: 500px) {
+		overflow: auto;
+		font-size: 0.7rem;
+		// max-width: 300px;
+		table-layout: fixed;
+		padding: 10px;
+
+		width: calc(100% - 20px);
+		b {
+			font-size: 0.7rem;
+		}
+	}
 }
 .user-account__content--row-title {
 	position: sticky;
@@ -49,6 +61,14 @@
 	border-bottom: 1px solid var(--main-red-color);
 	vertical-align: middle;
 	padding: 10px;
+	@media screen and (max-width: 500px) {
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		&:nth-child(-n + 2) {
+			display: none;
+		}
+	}
 }
 .user-account__content--row {
 	display: table-row;
@@ -71,5 +91,13 @@
 	}
 	img {
 		width: 100px;
+	}
+	@media screen and (max-width: 500px) {
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		&:nth-child(-n + 2) {
+			display: none;
+		}
 	}
 }

@@ -13,18 +13,29 @@ header {
 
 .logo {
 	margin-top: 8px;
+	@media screen and (max-width: 500px) {
+		img {
+			width: 100px;
+		}
+	}
 }
 
 .search {
 	margin: 0 40px;
 	display: flex;
 	align-items: center;
+	@media screen and (max-width: 500px) {
+		margin: 0px 10px;
+	}
 	button {
 		cursor: pointer;
 		background-color: transparent;
 		border: none;
 		img {
 			width: 20px;
+			@media screen and (max-width: 500px) {
+				width: 10px;
+			}
 		}
 	}
 	input {
@@ -35,6 +46,9 @@ header {
 		&:focus {
 			outline: none;
 		}
+		@media screen and (max-width: 500px) {
+			width: 50px;
+		}
 	}
 }
 
@@ -42,6 +56,9 @@ header {
 	color: var(--main-red-color);
 	font-family: "Montserrat", sans-serif;
 	font-size: 0.8rem;
+	@media screen and (max-width: 500px) {
+		display: none;
+	}
 }
 
 .navigation {
@@ -60,5 +77,12 @@ header {
 		&:last-of-type {
 			margin-right: 0;
 		}
+		@media screen and (max-width: 500px) {
+			font-size: 0.4rem;
+			margin: 0 3px;
+		}
+	}
+	@media screen and (max-width: 500px) {
+		margin: 10px;
 	}
 }
