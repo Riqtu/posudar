@@ -10,7 +10,7 @@ container.innerHTML = `
 				<input type="text" name="" id="" placeholder="Логин..." />
 				<label for="">Пароль</label>
 				<input type="text" name="" id="" placeholder="Пароль..." />
-				<button>Войти</button>
+				<a href='/screens/userAccount-orders.html'><button type='button'>Войти</button></a>
 				<h2 id="regLink">Регистрация</h2>
 			</form>
 		</div>
@@ -37,7 +37,38 @@ container.innerHTML = `
 				<img src="/images/icons/success.svg" alt="" />
 				<h2>Успешно!</h2>
 				<p>Для подтверждения мы выслали письмо на указанную почту</p>
-				<button id="regSuccessCloseBtn">Продолжить</button>
+				<button id="regSuccessCloseBtn" type="button">Продолжить</button>
 			</form>
 		</div>
+		<div class="modal" id="updInfoModal">
+		<form action="">
+			<label for="">ФИО</label>
+			<input type="text" name="" id="" placeholder="ФИО..." />
+			<label for="">Email</label>
+			<input type="text" name="" id="" placeholder="Email..." />
+			<label for="">Телефон</label>
+			<input type="text" name="" id="" placeholder="Телефон..." />
+			<label for="">Адрес</label>
+			<input type="text" name="" id="" placeholder="Адрес..." />
+			<button  type="button">Изменить</button>
+		</form>
+		</div>
+
+		<div class="modal" id="billModal">
+			<form action="">
+				<label for="">ФИО</label>
+				<input type="text" name="" id="" placeholder="ФИО..." />
+				<label for="">Телефон</label>
+				<input type="text" name="" id="" placeholder="Телефон..." />
+				<label for="">Адрес</label>
+				<input type="text" name="" id="" placeholder="Адрес..." />
+				<label for="">Способ оплаты</label>
+				<div style="display:flex; gap:10px;"> 			
+					<button  type="button">Картой онлайн</button>
+					<button  type="button">Наличные курьеру</button>
+				<div>
+			</form>
+		</div>
+
+
 `

@@ -1,4 +1,4 @@
-let headerContainer = document.getElementsByTagName('header')[0]
+let headerContainer = document.getElementsByTagName("header")[0]
 
 headerContainer.innerHTML = `
 
@@ -17,7 +17,7 @@ headerContainer.innerHTML = `
   пн-вск с 8:00 - 17:00
 </div>
 <div class="navigation">
-
+  <a href="/screens/userAccount-orders.html">Кабинет</a>
   <a href="/screens/cart.html">Корзина</a>
   <a href="#" id="authLink">Вход</a>
 </div>

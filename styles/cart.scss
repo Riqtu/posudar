@@ -33,7 +33,9 @@
 		border-bottom: 1px solid var(--gray-color);
 		vertical-align: middle;
 		padding: 10px;
-
+		&:last-of-type {
+			width: 40px;
+		}
 		img {
 			width: 100px;
 		}
