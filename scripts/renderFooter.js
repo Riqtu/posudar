@@ -1,11 +1,12 @@
 // alert('kek')
+import logo from "./../images/posudar.png"
 
-let footerContainer = document.getElementsByTagName('footer')[0]
+let footerContainer = document.getElementsByTagName("footer")[0]
 console.log(footerContainer)
 footerContainer.innerHTML = `
 
 <div>
-<img src="/images/posudar.png" alt="" class="logo" />
+<img src="${logo}" alt="" class="logo" />
 <div style="margin-left: 20px">ООО "ПосударЪ" <br />2020-2021</div>
 </div>
 <div>

@@ -1,13 +1,15 @@
 let headerContainer = document.getElementsByTagName("header")[0]
+import logo from "./../images/logo.png"
+import search from "./../images/icons/search.svg"
 
 headerContainer.innerHTML = `
 
 <div>
 <div class="logo">
-  <a href="/index.html"><img src="/images/logo.png" alt="Логотип" /></a>
+  <a href="/index.html"><img src="${logo}" alt="Логотип" /></a>
 </div>
 <div class="search">
-  <button><img src="/images/icons/search.svg" alt="" /></button>
+  <button><img src="${search}" alt="" /></button>
   <input type="text" placeholder="Поиск..." />
 </div>
 </div>

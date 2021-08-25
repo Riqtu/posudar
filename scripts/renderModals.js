@@ -1,10 +1,11 @@
 let container = document.getElementById("modalBlock")
+import logo from "./../images/logo.png"
 
 container.innerHTML = `
 
 <div class="modal" id="auth">
 			<form action="">
-				<img src="/images/logo.png" alt="" />
+				<img src="${logo}" alt="" />
 				<h2>Добро пожаловать!</h2>
 				<label for="">Логин</label>
 				<input type="text" name="" id="" placeholder="Логин..." />
@@ -17,7 +18,7 @@ container.innerHTML = `
 
 		<div class="modal" id="reg">
 			<form action="">
-				<img src="/images/logo.png" alt="" />
+				<img src="${logo}" alt="" />
 				<h2>Регистрация</h2>
 				<label for="">Email</label>
 				<input type="text" name="" id="" placeholder="Email..." />
@@ -32,7 +33,7 @@ container.innerHTML = `
 
 		<div class="modal" id="regSuccess">
 			<form action="">
-				<img src="/images/logo.png" alt="" />
+				<img src="${logo}" alt="" />
 				<h2>Регистрация</h2>
 				<img src="/images/icons/success.svg" alt="" />
 				<h2>Успешно!</h2>
