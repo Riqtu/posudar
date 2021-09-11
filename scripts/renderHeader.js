@@ -1,8 +1,8 @@
-let headerContainer = document.getElementsByTagName("header")[0]
-import logo from "./../images/logo.png"
-import search from "./../images/icons/search.svg"
-
-headerContainer.innerHTML = `
+let headerContainer = document.getElementsByTagName('header')[0]
+import logo from './../images/logo.png'
+import search from './../images/icons/search.svg'
+if (headerContainer)
+  headerContainer.innerHTML = `
 
 <div>
 <div class="logo">

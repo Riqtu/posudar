@@ -1,7 +1,7 @@
-let container = document.getElementById("modalBlock")
-import logo from "./../images/logo.png"
-
-container.innerHTML = `
+let container = document.getElementById('modalBlock')
+import logo from './../images/logo.png'
+if (container)
+  container.innerHTML = `
 
 <div class="modal" id="auth">
 			<form action="">

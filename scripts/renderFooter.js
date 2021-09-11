@@ -1,9 +1,9 @@
 // alert('kek')
-import logo from "./../images/posudar.png"
+import logo from './../images/posudar.png'
 
-let footerContainer = document.getElementsByTagName("footer")[0]
-console.log(footerContainer)
-footerContainer.innerHTML = `
+let footerContainer = document.getElementsByTagName('footer')[0]
+if (footerContainer)
+  footerContainer.innerHTML = `
 
 <div>
 <img src="${logo}" alt="" class="logo" />
