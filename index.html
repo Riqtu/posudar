@@ -1,93 +1,93 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/png" href="./images/icon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>ПосударЪ</title>
-		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
-		/>
-		<script>
-			document.addEventListener("DOMContentLoaded", function () {
-				var splide = new Splide(".splide", {
-					arrows: false,
-					autoplay: true,
-					interval: 3000,
-					pauseOnHover: false,
-					type: "loop"
-				})
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./images/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ПосударЪ</title>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide', {
+          arrows: false,
+          autoplay: true,
+          interval: 3000,
+          pauseOnHover: false,
+          type: 'loop',
+        })
 
-				splide.mount()
-			})
-		</script>
-	</head>
-	<body>
-		<header></header>
-		<nav></nav>
-		<div class="news-slider">
-			<div class="splide">
-				<div class="splide__track">
-					<ul class="splide__list">
-						<li class="splide__slide">
-							<img src="/images/Group 48.png" alt="" />
-						</li>
-						<li class="splide__slide"></li>
-						<li class="splide__slide">Slide 03</li>
-					</ul>
-				</div>
-				<div class="splide__progress">
-					<div class="splide__progress__bar"></div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<label for="" class="label">Продукция</label>
-			<div class="nav-product"></div>
-			<label for="" class="label">Предложения</label>
-			<div class="advert">
-				<div class="advert__box">
-					<a href="/screens/advert.html"
-						><img src="/images/n2ShPqK2vSA.jpg" alt=""
-					/></a>
-				</div>
-				<div class="advert__box">
-					<a href="/screens/advert.html"
-						><img src="/images/gaXY3SXwpuA.jpg" alt=""
-					/></a>
-				</div>
-				<div class="advert__box">
-					<a href="/screens/advert.html"
-						><img src="/images/n2ShPqK2vSA.jpg" alt=""
-					/></a>
-				</div>
-				<div class="advert__box">
-					<a href="/screens/advert.html"
-						><img src="/images/gaXY3SXwpuA.jpg" alt=""
-					/></a>
-				</div>
-				<div class="advert__box">
-					<a href="/screens/advert.html"
-						><img src="/images/n2ShPqK2vSA.jpg" alt=""
-					/></a>
-				</div>
-				<div class="advert__box">
-					<a href="/screens/advert.html"
-						><img src="/images/gaXY3SXwpuA.jpg" alt=""
-					/></a>
-				</div>
-			</div>
-			<label for="" class="label">Успей купить!</label>
-			<div class="product"></div>
-		</div>
-		<footer></footer>
-		<div id="modalBlock"></div>
-		<script type="script"></script>
+        splide.mount()
+      })
+    </script>
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <div class="news-slider">
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="/images/Group 48.png" alt="" />
+            </li>
+            <li class="splide__slide"></li>
+            <li class="splide__slide">Slide 03</li>
+          </ul>
+        </div>
+        <div class="splide__progress">
+          <div class="splide__progress__bar"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <label for="" class="label">Продукция</label>
+      <div class="nav-product"></div>
+      <label for="" class="label">Предложения</label>
+      <div class="advert">
+        <div class="advert__box">
+          <a href="/screens/advert.html"
+            ><img src="/images/n2ShPqK2vSA.jpg" alt=""
+          /></a>
+        </div>
+        <div class="advert__box">
+          <a href="/screens/advert.html"
+            ><img src="/images/gaXY3SXwpuA.jpg" alt=""
+          /></a>
+        </div>
+        <div class="advert__box">
+          <a href="/screens/advert.html"
+            ><img src="/images/n2ShPqK2vSA.jpg" alt=""
+          /></a>
+        </div>
+        <div class="advert__box">
+          <a href="/screens/advert.html"
+            ><img src="/images/gaXY3SXwpuA.jpg" alt=""
+          /></a>
+        </div>
+        <div class="advert__box">
+          <a href="/screens/advert.html"
+            ><img src="/images/n2ShPqK2vSA.jpg" alt=""
+          /></a>
+        </div>
+        <div class="advert__box">
+          <a href="/screens/advert.html"
+            ><img src="/images/gaXY3SXwpuA.jpg" alt=""
+          /></a>
+        </div>
+      </div>
+      <label for="" class="label">Успей купить!</label>
+      <div class="product"></div>
+    </div>
+    <footer></footer>
+    <div id="modalBlock"></div>
+    <script type="script"></script>
 
-		<script type="module" src="/main.js"></script>
-		<script type="module" src="/scripts/renderNavProducts.js"></script>
-		<script type="module" src="/scripts/renderProducts.js"></script>
-	</body>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/scripts/renderNavProducts.js"></script>
+    <script type="module" src="/scripts/renderProducts.js"></script>
+  </body>
 </html>

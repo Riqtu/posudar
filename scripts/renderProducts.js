@@ -1,7 +1,7 @@
 import cardPhoto from '/images/image 12.png'
 import cardSale from '/images/icons/sale.svg'
 import cardCart from '/images/icons/cart.svg'
-
+import { cartCounter } from './../main'
 let productContainer = document.getElementsByClassName('product')[0]
 if (productContainer) {
   const productsArr = ['', 'sale', '', '', 'sale', '', '', '', 'sale', '']
@@ -43,6 +43,12 @@ if (productContainer) {
               : `<div class="product__card--price opt">360₽</div>`
           }
         </div>
+        <div> 
+          <span class="product__card--bill-style">10 шт. в упаковке</span>
+        </div>
+        <div> 
+          <span class="product__card--bill-style">3 упаковки на складе</span>
+        </div>
         <div class="product__card--title">Тарелка "Japan"</div>
       </a>
       <div class="counter" style="margin-bottom: 10px">
@@ -53,7 +59,8 @@ if (productContainer) {
         +
       </button>
     </div> 
-    <button class="product__card--cart-btn" onclick="this.style.background = 'gray'; this.textContent = 'Добавлено'">
+    <button class="product__card--cart-btn" >
+
       <span>В корзину</span><img src="${cardCart}" alt="" />
     </button> 
   </div>

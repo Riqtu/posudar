@@ -1,4 +1,5 @@
 nav {
+  position: relative;
   display: flex;
   min-height: 70px;
   background-color: var(--main-red-color);
@@ -7,6 +8,9 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   a {
+    text-decoration: none;
+  }
+  .nav__link {
     display: flex;
     align-items: center;
     padding: 0 10px;
@@ -39,4 +43,30 @@ nav {
   //     content: '';
   //     flex: auto;
   //   }
+}
+
+.nav--sub-container {
+  display: none;
+  position: absolute;
+  width: 90%;
+  background-color: white;
+  z-index: 100;
+  top: 100%;
+  border: 1px solid var(--main-red-color);
+  a {
+    color: black;
+  }
+}
+
+.nav--sub-container__element {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 250px;
+  }
+  span {
+    margin: 10px 0px;
+    margin-bottom: 0;
+  }
 }
