@@ -21,18 +21,18 @@ if (navContainer) {
     })
     "
   >
-<a href="/screens/products.html" >
-      <div class='nav--sub-container__element' >
-        <img src='/images/jannet-serhan-snHXvw1C690-unsplash 1.jpg' alt=''/> 
-        <span>Коллекция "дождь"</span>
-      </div>
-</a>
-<a  href="/screens/products.html" >
-      <div class='nav--sub-container__element' >
-        <img src='/images/kek.jpg' alt=''/> 
-        <span>Кухонный инвентарь </span>
-      </div>
-</a>
+  <a href="/screens/products.html" >
+        <div class='nav--sub-container__element' >
+          <img src='/images/jannet-serhan-snHXvw1C690-unsplash 1.jpg' alt=''/> 
+          <span>Коллекция "дождь"</span>
+        </div>
+  </a>
+  <a  href="/screens/products.html" >
+        <div class='nav--sub-container__element' >
+          <img src='/images/kek.jpg' alt=''/> 
+          <span>Кухонный инвентарь </span>
+        </div>
+  </a>
   </div>`
 
   navContainer.innerHTML = nav.join('\n') + sub
