@@ -58,43 +58,31 @@ document.addEventListener('scroll', () => {
 
 let cartCounter = 0
 
-window.addEventListener('load', () => {
-  const cartButtons = document.querySelectorAll('.product__card--cart-btn')
+const handleCartCounter = (classElement) => {
+  const cartButtons = document.querySelectorAll(classElement)
+  cartButtons &&
+    cartButtons.forEach((element) => {
+      element.addEventListener('click', (e) => {
+        let button = e.target.closest('button') // (1)
 
-  cartButtons.forEach((element) => {
-    element.addEventListener('click', (e) => {
-      let button = e.target.closest('button') // (1)
+        if (!button) return // (2)
 
-      if (!button) return // (2)
+        if (!element.contains(button)) return // (
 
-      if (!element.contains(button)) return // (
-
-      button.style.background = 'gray'
-      button.textContent = 'Добавлено'
-      //   cartCounter =
-      //     cartCounter +
-      //     Number(
-      //       button.previousElementSibling.getElementsByTagName('input')[0].value
-      //     )
-      cartCounter += 1
-      if (cartCounter !== 0) {
-        const cartCounterEl = document.getElementById('cart-counter')
-        cartCounterEl.style.display = 'inline'
-        cartCounterEl.innerHTML = `<span>${cartCounter}</span>`
-      }
+        button.style.background = 'gray'
+        button.textContent = 'Добавлено'
+        cartCounter += 1
+        if (cartCounter !== 0) {
+          const cartCounterEl = document.getElementById('cart-counter')
+          cartCounterEl.style.display = 'inline'
+          cartCounterEl.innerHTML = `<span>${cartCounter}</span>`
+        }
+      })
     })
-  })
+}
+
+window.addEventListener('load', () => {
+  handleCartCounter('.product__card--cart-btn')
 })
 
 export { cartCounter }
-// document.getElementById("billModalOpenBtn").addEventListener("click", () => {
-// 	showModal("billModal")
-// })
-// document.getElementById("billModalCloseBtn").addEventListener("click", () => {
-// 	hideModal(document.getElementById("billModal"))
-// })
-
-// document.getElementById("updInfoModalOpenBtn").addEventListener("click", () => {
-// 	showModal("updInfoModal")
-// })
-// import "./scripts/renderNavProducts"
