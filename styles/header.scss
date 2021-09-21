@@ -1,99 +1,104 @@
 header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.336);
-  padding: 0 5%;
-  height: 70px;
-  transition: 0.3s;
-  div {
-    display: flex;
-    align-items: center;
-  }
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgba(255, 255, 255, 0.336);
+	padding: 0 5%;
+	height: 70px;
+	transition: 0.3s;
+	div {
+		display: flex;
+		align-items: center;
+	}
 }
 #cart-counter {
-  background-color: #ffc366;
-  border-radius: 5px;
-  padding: 3px 5px;
-  color: white;
-  display: none;
-  font-family: 'Montserrat', sans-serif;
+	background-color: #ffc366;
+	border-radius: 5px;
+	padding: 3px 5px;
+	color: white;
+	display: none;
+	font-family: "Montserrat", sans-serif;
+	text-transform: none;
+	span {
+		font-family: "Montserrat", sans-serif;
+		font-size: 14px;
+	}
 }
 .logo {
-  margin-top: 8px;
-  @media screen and (max-width: 500px) {
-    img {
-      width: 100px;
-    }
-  }
+	margin-top: 8px;
+	@media screen and (max-width: 500px) {
+		img {
+			width: 100px;
+		}
+	}
 }
 
 .search {
-  margin: 0 40px;
-  display: flex;
-  align-items: center;
-  @media screen and (max-width: 500px) {
-    margin: 0px 10px;
-  }
-  button {
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    img {
-      width: 20px;
-      @media screen and (max-width: 500px) {
-        width: 10px;
-      }
-    }
-  }
-  input {
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid var(--main-red-color);
-    padding: 5px;
-    &:focus {
-      outline: none;
-    }
-    @media screen and (max-width: 500px) {
-      width: 50px;
-    }
-  }
+	margin: 0 40px;
+	display: flex;
+	align-items: center;
+	@media screen and (max-width: 500px) {
+		margin: 0px 10px;
+	}
+	button {
+		cursor: pointer;
+		background-color: transparent;
+		border: none;
+		img {
+			width: 20px;
+			@media screen and (max-width: 500px) {
+				width: 10px;
+			}
+		}
+	}
+	input {
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid var(--main-red-color);
+		padding: 5px;
+		&:focus {
+			outline: none;
+		}
+		@media screen and (max-width: 500px) {
+			width: 50px;
+		}
+	}
 }
 
 .contact-info {
-  color: var(--main-red-color);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.8rem;
-  @media screen and (max-width: 500px) {
-    display: none;
-  }
+	color: var(--main-red-color);
+	font-family: "Montserrat", sans-serif;
+	font-size: 0.8rem;
+	@media screen and (max-width: 500px) {
+		display: none;
+	}
 }
 
 .navigation {
-  margin: 0 20px;
-  margin-right: 0;
-  background-color: transparent;
-  a {
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    margin: 0 7px;
-    transition: 0.2s;
-    &:hover {
-      color: var(--main-red-color);
-    }
-    &:last-of-type {
-      margin-right: 0;
-    }
-    @media screen and (max-width: 500px) {
-      font-size: 0.4rem;
-      margin: 0 3px;
-    }
-  }
-  @media screen and (max-width: 500px) {
-    margin: 10px;
-  }
+	margin: 0 20px;
+	margin-right: 0;
+	background-color: transparent;
+	a {
+		text-decoration: none;
+		color: black;
+		text-transform: uppercase;
+		margin: 0 7px;
+		transition: 0.2s;
+		&:hover {
+			color: var(--main-red-color);
+		}
+		&:last-of-type {
+			margin-right: 0;
+		}
+		@media screen and (max-width: 500px) {
+			font-size: 0.4rem;
+			margin: 0 3px;
+		}
+	}
+	@media screen and (max-width: 500px) {
+		margin: 10px;
+	}
 }
