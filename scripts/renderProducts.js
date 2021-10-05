@@ -47,7 +47,7 @@ if (productContainer) {
           <span class="product__card--bill-style">10 шт. в упаковке</span>
         </div>
         <div> 
-          <span class="product__card--bill-style">3 упаковки на складе</span>
+          <span class="product__card--bill-style">3 в наличии</span>
         </div>
         <div class="product__card--title">Тарелка "Japan"</div>
       </a>

@@ -70,11 +70,14 @@ const handleCartCounter = (classElement) => {
 
 				if (!element.contains(button)) return // (
 
-				let price = button.parentNode
-					.getElementsByTagName("a")[0]
-					.getElementsByTagName("div")[1]
-					.getElementsByClassName("product__card--price")[0]
-					.getElementsByTagName("h3")[0].textContent
+				let price = button.parentNode.getElementsByTagName("a")[0]
+					? button.parentNode
+							.getElementsByTagName("a")[0]
+							.getElementsByTagName("div")[1]
+							.getElementsByClassName("product__card--price")[0]
+							.getElementsByTagName("h3")[0].textContent
+					: button.parentNode.parentNode.getElementsByTagName("h2")[0]
+							.textContent
 
 				let priceNumb = Number(price.substring(0, price.length - 1))
 				let counter = Number(
@@ -91,14 +94,41 @@ const handleCartCounter = (classElement) => {
 				if (cartCounter !== 0) {
 					const cartCounterEl = document.getElementById("cart-counter")
 					cartCounterEl.style.display = "inline"
-					cartCounterEl.innerHTML = `<span>${cartCounter} ед. ${billCounter} ₽</span>`
+					cartCounterEl.innerHTML = `<span>${cartCounter} sku ${billCounter} ₽</span>`
 				}
 			})
 		})
 }
 
+const productOver = () => {
+	const subContainer = document.getElementsByClassName("nav--sub-container")[0]
+	subContainer.addEventListener("mouseout", (e) => {
+		subContainer.style.display = "none"
+		e.preventDefault()
+		e.stopPropagation()
+	})
+}
+
+const stopPropLink = () => {
+	const subContainer = document.getElementsByClassName("nav--sub-container")[0]
+	subContainer.querySelectorAll("a").forEach((el) => {
+		el.addEventListener("mouseover", (e) => {
+			subContainer.style.display = "flex"
+			e.preventDefault()
+			e.stopPropagation()
+		})
+		el.addEventListener("mouseout", (e) => {
+			subContainer.style.display = "flex"
+			e.preventDefault()
+			e.stopPropagation()
+		})
+	})
+}
+
 window.addEventListener("load", () => {
 	handleCartCounter(".product__card--cart-btn")
+	stopPropLink()
+	productOver()
 })
 
 export { cartCounter }
